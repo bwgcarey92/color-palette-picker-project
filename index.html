@@ -3,10 +3,56 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="styles.css">
-        <title>Document</title>
+        <title>Color Palette Picker</title>
     </head>
     <body>
+        <header>
+            <form>
+                <input 
+                    type="color"
+                    id="color-picker"
+                >
+                <select 
+                    id="color-format-select"
+                >
+                    <option>Monochrome</option>
+                </select>
+                <button 
+                    id="get-colors-btn"
+                >Get color scheme</button>
+            </form>
+        </header>
+        <main>
+            <div id="color-container">
+                <div id="cc1">
+                    <div id="color-block1" class="colors"></div>
+                    <p>Red</p>
+                </div>
+                <div id="cc2">
+                    <div id="color-block2" class="colors"></div>
+                    <p>Blue</p>
+                </div>
+                <div id="cc3">
+                    <div id="color-block3" class="colors"></div>
+                    <p>Green</p>
+                </div>
+                <div id="cc4">
+                    <div id="color-block4" class="colors"></div>
+                    <p>Purple</p>
+                </div>
+                <div id="cc5">
+                    <div id="color-block5" class="colors"></div>
+                    <p>Yellow</p>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>2024 Blessed Co.</p>
+        </footer>
         <script src="index.js"></script>
     </body>
 </html>

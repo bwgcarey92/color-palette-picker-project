@@ -2,4 +2,96 @@ html,
 body {
     margin: 0;
     padding: 0;
+    text-align: center;
+    font-family: "Inter", sans-serif;
 }
+
+
+/* Header section*/
+header {
+    border: 1px dotted red;
+    height: 6em;
+    display: flex;
+    background-color: #ffffff;
+}
+
+form {
+    border: 1px dotted blue;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75em;
+}
+
+#color-picker,
+#color-format-select,
+#get-colors-btn {
+    height: 3.5em;
+    border-radius: 4px;
+    border: 1px solid #d1d5db;
+    font-family: 'Inter', sans-serif;;
+}
+
+#color-picker{
+    width: 4.5em;
+}
+
+#color-format-select,
+#get-colors-btn {
+    background-color: #ffffff;
+}
+
+#color-format-select{
+    padding: 1em 11em 1em 1em;
+}
+
+#get-colors-btn{
+    padding: 1em;
+}
+
+/* Main Content */
+
+main{
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#color-container{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-areas: 
+        "cc1 cc1 cc2 cc2 cc3 cc3 cc4 cc4 cc5 cc5";
+    height: 550px;
+}
+
+#cc1{grid-area: cc1;}
+#cc2{grid-area: cc2;}
+#cc3{grid-area: cc3;}
+#cc4{grid-area: cc4;}
+#cc5{grid-area: cc5;}
+#color-block1{
+    background-color: red;
+}
+#color-block2{
+    background-color: blue
+}
+#color-block3{
+    background-color: green
+}
+#color-block4{
+    background-color: purple;
+}
+#color-block5{
+    background-color: yellow;
+}
+
+.colors {
+    height: 80%;
+}
+
+
+/* Footer section */
+
+/* Media Querys */
