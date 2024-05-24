@@ -9,14 +9,12 @@ body {
 
 /* Header section*/
 header {
-    border: 1px dotted red;
     height: 6em;
     display: flex;
     background-color: #ffffff;
 }
 
 form {
-    border: 1px dotted blue;
     width: 100%;
     display: flex;
     align-items: center;
@@ -48,6 +46,10 @@ form {
 
 #get-colors-btn{
     padding: 1em;
+}
+
+#get-colors-btn:hover {
+    cursor: pointer;
 }
 
 /* Main Content */
